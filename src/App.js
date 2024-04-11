@@ -70,7 +70,7 @@ function App() {
         return;
       }
 
-      const apiKey = 'AIzaSyBGFCXOS0At4PAHkpzotnTsyVCe62-8Mlg'; // Replace with your Google Maps API Key
+      const apiKey = 'API-key'; // Replace with your Google Maps API Key
       try {
         const geocodeResponse = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${apiKey}`);
         const { lat, lng } = geocodeResponse.data.results[0].geometry.location;
